@@ -13,6 +13,7 @@ if(string) {
 } 
 if(!string || string.length === 1) {
     $("#result").html("Invalid string or string length.");
+    $("#result").css("color","red");
     return "String is undefined or has invalid length.";
 }
 for(i=0; i<=Math.floor(string.length/2-1); i++) {
